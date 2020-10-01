@@ -23,7 +23,6 @@ export class ChannelsComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    console.log(this.dataChannels)
   }
 
   addChannels() {

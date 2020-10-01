@@ -18,7 +18,7 @@ export class DataService {
 
   public getSort(){
     return this.storage.get('sort').subscribe((sort) => {
-      console.log(sort);
+      
     });
   }
 
@@ -28,7 +28,7 @@ export class DataService {
 
   public getGenre(){
     return this.storage.get('genre').subscribe((sort) => {
-      console.log(sort);
+      
     });
   }
 
