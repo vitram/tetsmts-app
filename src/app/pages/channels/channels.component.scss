@@ -4,20 +4,20 @@
     background-size: cover;
 }
 
-.row{
+.channelsContainer{
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
 }
 
 @media (min-width: 320px) {
-    .channel { grid-template-columns: repeat(2, 1fr); }
+    .channelsContainer { grid-template-columns: repeat(2, 1fr); }
   }
 
   @media (min-width: 768px) {
-    .channel { grid-template-columns: repeat(4, 1fr); }
+    .channelsContainer { grid-template-columns: repeat(4, 1fr); }
   }
 
   @media (min-width: 1200px) {
-    .channel { grid-template-columns: repeat(6, 1fr); }
+    .channelsContainer { grid-template-columns: repeat(6, 1fr); }
   }

@@ -3,7 +3,6 @@
         <h2>{{total}} каналов</h2>
         <div class="row channelsContainer">
             <div *ngFor="let ch of channels" class="channel" [style.backgroundImage]="'url('+ ch.picture.backgrounds +')'">
-                {{ch.name}}
             </div>
         </div>
         <button (click)="addChannels()">Добавить еще</button>
