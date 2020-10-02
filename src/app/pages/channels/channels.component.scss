@@ -25,6 +25,7 @@
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
+    overflow: hidden;
 }
 
 .ch-count{
@@ -58,6 +59,60 @@
     color: rgba(232, 249, 255, 0.4);
   }
 }
+
+
+.popover__wrapper {
+  position: relative;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+.popover__content {
+  opacity: 0;
+  padding: 20px;
+  visibility: hidden;
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  width: 330px;
+  height: auto;
+  transform: translate(0, 10px);
+  background: #233345;
+  box-shadow: 0px 4px 50px rgba(0, 20, 36, 0.7);
+  border-radius: 5px;
+  .pop_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pop_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+  }
+}
+.popover__wrapper:hover .popover__content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+
 
 @media (min-width: 320px) {
     .channelsContainer { grid-template-columns: repeat(2, 1fr); }

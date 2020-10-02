@@ -2,7 +2,13 @@
    
         <div class="ch-count pb-3">{{total}} каналов</div>
         <div class="row channelsContainer">
-            <div *ngFor="let ch of channels" class="channel" [style.backgroundImage]="'url('+ ch.picture.backgrounds +')'">
+            <div *ngFor="let ch of channels" class="popover__wrapper">
+                <div class="channel popover__title" [style.backgroundImage]="'url('+ ch.picture.backgrounds +')'"></div>
+                <div class="popover__content">
+                    <div class="pop_title">{{ch.name}}</div>
+                    <div class="pop_text">{{ch.introduce}}</div>
+                    <img [src]="ch.picture.channelBlackWhites" alt="">
+                  </div>
             </div>
         </div>
         <div class="text-center showMore mb-3" (click)="addChannels()">

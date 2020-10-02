@@ -30,4 +30,8 @@ export class ChannelsComponent implements OnInit {
     this.channels = this.dataChannels.slice(0, this.limit);
   }
 
+  check(url){
+    console.log(url)
+  }
+
 }
