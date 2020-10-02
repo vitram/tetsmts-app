@@ -1,5 +1,5 @@
 <div *ngIf="dataChannels">
-    <div class="container">
+   
         <h2>{{total}} каналов</h2>
         <div class="row channelsContainer">
             <div *ngFor="let ch of channels" class="channel" [style.backgroundImage]="'url('+ ch.picture.backgrounds +')'">
@@ -9,7 +9,7 @@
             <button class="btn btn-primary" (click)="addChannels()">Добавить еще</button>
         </div>
         
-    </div>
+  
 
     
     
