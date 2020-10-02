@@ -27,6 +27,38 @@
     grid-gap: 1rem;
 }
 
+.ch-count{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+
+  /* #FFFFFF */
+
+  color: #FFFFFF;
+}
+
+.showMore{
+  img{
+    width: 34px;
+    height: 27px;
+  }
+  div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: rgba(232, 249, 255, 0.4);
+  }
+}
+
 @media (min-width: 320px) {
     .channelsContainer { grid-template-columns: repeat(2, 1fr); }
   }
